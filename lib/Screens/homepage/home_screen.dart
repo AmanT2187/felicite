@@ -5,10 +5,12 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../appColors/appColors.dart';
 import '../../data/home_page_data/home_page_data.dart';
+import '../../routes/routes.dart';
 import '../../stylies/home_screen_stylies.dart';
 import '../../svgimages/svg_images.dart';
 import '../../widget/show_all_widget.dart';
 import '../../widget/single_product_widget.dart';
+import '../detail_screen/details_Screen.dart';
 import '../tabbar/tabbar_data.dart';
 
 class HomePage extends StatelessWidget {
@@ -225,12 +227,12 @@ class HomePage extends StatelessWidget {
                         productOldPrice: arrivalDataStore.productOldPrice,
                         productPrice: arrivalDataStore.productPrice,
                         onPressed: () {
-                          // PageRouting.goToNextPage(
-                          //   context: context,
-                          //   navigateTo: DetailScreen(
-                          //     data: arrivalDataStore,
-                          //   ),
-                          // );
+                          PageRouting.goToNextPage(
+                            context: context,
+                            navigateTo: DetailScreen(
+                              data: arrivalDataStore,
+                            ),
+                          );
                         },
                       );
                     },
@@ -283,12 +285,12 @@ class HomePage extends StatelessWidget {
 
                       return SingleProductWidget(
                           onPressed: () {
-                            // PageRouting.goToNextPage(
-                            //   context: context,
-                            //   navigateTo: DetailScreen(
-                            //     data: historyDataStore,
-                            //   ),
-                            // );
+                            PageRouting.goToNextPage(
+                              context: context,
+                              navigateTo: DetailScreen(
+                                data: historyDataStore,
+                              ),
+                            );
                           },
                           productImage: historyDataStore.productImage,
                           productModel: historyDataStore.productModel,

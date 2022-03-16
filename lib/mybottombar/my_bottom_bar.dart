@@ -27,7 +27,7 @@ class MyBottomBar extends StatefulWidget {
 class _MyBottomBarState extends State<MyBottomBar> {
   int _selectedIndex = 0;
   static List<Widget> _widgetOptions = <Widget>[
-    HomePage()
+    HomePage(),
     // CategoryScreen(),
     // YourBagScreen(),
     // WishListScreen(),

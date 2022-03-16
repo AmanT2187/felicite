@@ -20,9 +20,12 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget buildTopPart() {
     return Column(
       children: [
-        Image.asset(
-          "images/flogo.jpg",
-          height: 150,
+        Container(
+          margin: EdgeInsets.all(10.0),
+          child: Image.asset(
+            "images/fflogo.png",
+            height: 150,
+          ),
         ),
         Column(
           children: [

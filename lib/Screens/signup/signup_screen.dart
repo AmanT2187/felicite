@@ -14,7 +14,7 @@ class SignUpScreen extends StatelessWidget {
     return Column(
       children: [
         Image.asset(
-          "images/flogo.jpg",
+          "images/fflogo.png",
           height: 150,
         ),
         MyTextFromField(
